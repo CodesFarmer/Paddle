@@ -34,6 +34,7 @@ detection_library(generate_proposal_labels_op SRCS generate_proposal_labels_op.c
 detection_library(box_clip_op SRCS box_clip_op.cc box_clip_op.cu)
 detection_library(yolov3_loss_op SRCS yolov3_loss_op.cc)
 detection_library(distribute_fpn_proposals_op SRCS distribute_fpn_proposals_op.cc)
+detection_library(collect_fpn_proposals_op SRCS collect_fpn_proposals_op.cc)
 
 if(WITH_GPU)
   detection_library(generate_proposals_op SRCS generate_proposals_op.cc generate_proposals_op.cu DEPS memory cub)
